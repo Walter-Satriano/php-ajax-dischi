@@ -28,18 +28,25 @@
   </head>
   <body>
 
-    <div class="container">
+    <header>
+      <div class="title">
+        <h1>BOOL<span>RECORDS</span></h1>
+      </div>
+
+    </header>
+
+    <div class="album_container">
 
     </div>
 
 
-
     <script id="template_album" type="text/x-handlebars-template">
-      <ul class="hotel_list">
-        <li>{{title}}</li>
-        <li>{{author}}</li>
-        <li>{{year}}</li>
-      </ul>
+      <div class="album">
+        <img src="{{{poster}}}" alt="">
+        <h3>{{title}}</h3>
+        <span class="author">{{author}}</span>
+        <span class="year">{{year}}</span>
+      </div>
     </script>
 
   </body>

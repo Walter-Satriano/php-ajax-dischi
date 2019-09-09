@@ -31,11 +31,13 @@ $(document).ready(function() {
     for (var i = 0; i < data.length; i++) {
       var album = data[i];
 
+      var albumPoster = album.poster;
       var albumTitle = album.title;
       var albumAuthor = album.author;
       var albumYear = album.year;
 
       var context = {
+        poster: albumPoster,
         title: albumTitle,
         author: albumAuthor,
         year: albumYear,
@@ -44,7 +46,7 @@ $(document).ready(function() {
 
       var html = template(context);
 
-      $(".container").append(html);
+      $(".album_container").append(html);
 
     }
   }
